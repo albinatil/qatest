@@ -1,2 +1,14 @@
 hello, world! hello, my friends!
 hello everybody
+
+$("#id=dateOfBirthInput").setValue("01.07.1994");
+        $("#permanentAddress").setValue("Another address");
+        $("#submit").click();
+
+        $("#output #name").shouldHave(text("Some name"));
+        $("#output").$("#email").shouldHave(text("aaa@aa.aa"));
+        $("#output").$("#currentAddress").shouldHave(text("Some address"));
+        $("#output").$("#permanentAddress").shouldHave(text("Another address"));
+
+//        $("#output").shouldHave(text("Some name"), text("aaa@aa.aa"),
+//                text("Some address"), text("Another address"));
